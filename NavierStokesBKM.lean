@@ -9,4 +9,6 @@ import NavierStokesBKM.DiscreteLatticeRegularity
 import NavierStokesBKM.GalerkinFamily3D
 import NavierStokesBKM.UniformBounds3D
 import NavierStokesBKM.CompactnessExtraction
+import NavierStokesBKM.BernsteinInequality
+import NavierStokesBKM.ContinuousMaxPrinciple
 import NavierStokesBKM.NavierStokesUnconditional
