@@ -1,0 +1,9 @@
+.lake/
+lake-packages/
+lake-manifest.json
+*.olean
+*.ilean
+*.trace
+*.c
+*.o
+.DS_Store
