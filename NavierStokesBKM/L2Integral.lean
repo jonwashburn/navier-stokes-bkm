@@ -92,9 +92,9 @@ theorem j_cost_pointwise_bound (u : VectorField) (hRS : RSCompatibleField u) :
     ∃ n : ℕ, ∀ x : Fin 3 → ℝ, ‖u x‖ ^ 2 ≤ (φ ^ n) ^ 2 := by
   obtain ⟨n, h_bound⟩ := hRS.phi_bound
   exact ⟨n, fun x => by
-    apply sq_le_sq'
-    · linarith [norm_nonneg (u x)]
-    · exact h_bound x⟩
+    have hnn : 0 ≤ ‖u x‖ := norm_nonneg _
+    have hpn : 0 ≤ φ ^ n := pow_nonneg (le_of_lt (lt_trans one_pos φ_gt_one)) n
+    exact sq_le_sq' (by linarith [h_bound x]) (h_bound x)⟩
 
 theorem rs_mass_gap_positive : 0 < J_cost φ := J_cost_phi_pos
 
