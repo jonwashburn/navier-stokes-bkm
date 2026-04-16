@@ -10,5 +10,8 @@ import NavierStokesBKM.GalerkinFamily3D
 import NavierStokesBKM.UniformBounds3D
 import NavierStokesBKM.CompactnessExtraction
 import NavierStokesBKM.BernsteinInequality
+import NavierStokesBKM.ShellLocalizedEnstrophy
 import NavierStokesBKM.ContinuousMaxPrinciple
+import NavierStokesBKM.GalerkinTriadicDecomposition
+import NavierStokesBKM.NSFourierSymbol
 import NavierStokesBKM.NavierStokesUnconditional
